@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Viewer</title>
+</head>
+<body style="width: 100%;">
+    <label for="height">HEIGHT</label>
+    <input type="text" id="height">
+    <label for="width">WIDTH</label>
+    <input type="text" id="width">
+    <label for="height">URL</label>
+    <input type="text" id="urls">
+    <button onclick="refresh()">Load</button>
+    <div style="width: 100%; display: flex;
+    justify-content: center; margin-top: 50px">
+        <iframe frameborder="0" style="width: 200px; height: 200px ; border: 2px solid black;" id="container" title="Iframe"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

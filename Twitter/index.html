@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWITTER | Vidas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="whole-container">
+        <!-- side-bar -->
+        <div class="left-content-bar">
+            <div class="content">
+                <div class="nav-bar">
+                    <div class="twt-logo">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <a href="" class="active">
+                        <div>
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <span>Home</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i class="fa-regular fa-hashtag"></i>
+                        </div>
+                        <span>Explore</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <span>Notifications</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <span>Messages</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                        <span>Lists</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <span>Bookmarks</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </div>
+                        <span>Twitter Blue</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span>Profile</span>
+                    </a>
+                    <a href="">
+                        <div>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <span>More</span>
+                    </a>
+                    <button class="tweet flex-c">
+                        <span class="btn-twt-icon">
+                            <i class="fa fa-twitter"></i>
+                        </span>
+                        <span class="btn-twt-txt">Tweet</span>
+                    </button>
+                </div>
+                <div class="profile flex-c">
+                    <div class="user-img flex-c">
+                        <img src="https://i.pinimg.com/originals/5a/e5/98/5ae598ff624217b9a5c008beb8c512d0.jpg" alt="">
+                    </div>
+                    <div class="user-inf">
+                        <span class="name">Cath</span><br>
+                        <span class="username">@username</span>
+                    </div>
+                    <div class="more flex-l">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- main -->
+        <div class="main-bar">
+            <div class="middle-content">
+                <div class="main-home">
+                    <!-- header -->
+                    <div class="header">
+                        <div class="home flex-l">
+                            <span>Home</span>
+                        </div>
+                        <div class="action-btn">
+                            <div>
+                                <span class="active">For you</span>
+                            </div>
+                            <div>
+                                <span>Following</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- post-something -->
+                    <div class="post-input-section">
+                        <div class="top-sect flex-l">
+                            <div class="user-img">
+                                <img src="https://i.pinimg.com/originals/5a/e5/98/5ae598ff624217b9a5c008beb8c512d0.jpg">
+                            </div>
+                            <!-- form -->
+                            <form action="" id="post-form" class="twt-f">
+                                <div class="audience flex-c">
+                                    <span>Everyone</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="c-aud">
+                                    <span>Choose Audience</span>
+                                    <div class="ch flex-sb" id="aud-e">
+                                        <div class="lft flex-l">
+                                            <div class="icon-bx e flex-c">
+                                                <i class="fas fa-globe-asia"></i>
+                                            </div>
+                                            <span class="ch-txt">Everyone</span>
+                                        </div>
+                                        <span class="chck">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                    </div>
+                                    <div class="ch flex-sb" id="aud-t">
+                                        <div class="lft flex-l">
+                                            <div class="icon-bx t flex-c">
+                                                <i class="fas fa-user-friends"></i>
+                                            </div>
+                                            <div>
+                                                <span class="ch-txt">Twitter Circle</span>
+                                                <div class="tc">
+                                                    <span class="ct">0</span>
+                                                    <span class="pe">People</span>
+                                                    <span class="edi">Edit</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="chck">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- textarea -->
+                                <textarea maxlength="280" placeholder="What's happening?" class="input-p"
+                                    id="tweet-textarea"></textarea>
+                                <div class="img-prvw-cntnr"></div>
+                                <div class="sel-aud">
+                                    <i class="fa fa-globe"></i>
+                                    <span class="desc">Everyone can reply</span>
+                                </div>
+                                <div class="other-opt flex-sb ">
+                                    <div class="opt-icons flex-l">
+                                        <div class="ad-files">
+                                            <div class="opt-hide"></div>
+                                            <label for="fileInput">
+                                                <i class="fa fa-image"></i>
+                                            </label>
+                                            <input id="fileInput" type="file">
+                                        </div>
+                                        <div class="ad-gif">
+                                            <i>GIF</i>
+                                        </div>
+                                        <div class="ad-list">
+                                            <i class="fa fa-list-ul"></i>
+                                        </div>
+                                        <div class="ad-emoji">
+                                            <i class="far fa-smile"></i>
+                                        </div>
+                                        <div class="ad-time">
+                                            <i class="fa-sharp fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="ad-loc">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+
+                                    </div>
+                                    <div class="rgt-sd flex-c">
+                                        <div class="on-input-show flex-c">
+                                            <div class="in-prgrs">
+                                                <div class="progress-bar">
+                                                    <progress value="70" min="0" max="100"
+                                                        style="visibility:hidden;height:0;width:0;"></progress>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="v-line"></div>
+                                            </div>
+                                            <div class="add-twt-btn">
+                                                <div class="circle flex-c">
+                                                    <i class="fa-regular fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="twt-btn">
+                                            <button class="tweet" onclick="tweet('#post-form', 'tweet', null)">Tweet
+                                            </button>
+                                            <div class="tweet-hide"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="a-click"></div>
+                    </div>
+
+
+                    <div class="twt-tmln">
+                        <!-- tweets timeline -->
+                    </div>
+
+                </div>
+
+                <div class="main-thread">
+                    <div class="header flex-l back-home">
+                        <div class="icon-bx flex-c">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <span>Tweet</span>
+                    </div>
+                    <div class="thread-pa">
+
+
+                        <!-- thread -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- rgt  -->
+            <div class="right-content">
+                <div class="srch-bar">
+                    <form action="" class="srch">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search Twitter">
+                    </form>
+                </div>
+                <div class="rgt-containers">
+                    <h2 class="trend-hdng">Trends for you</h2>
+                    <div class="trend">
+                        <div class="trnd-tp flex-sb">
+                            <div class="spc-tr">K-pop &centerdot; Trending</div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="tr-nm">#Angel_Pt1</div>
+                        <div class="cnt-twts">210K Tweets</div>
+                    </div>
+                    <div class="trend">
+                        <div class="trnd-tp flex-sb">
+                            <div class="spc-tr">Trending in Philippines</div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="tr-nm">#BbPilipinas2023</div>
+                        <div class="cnt-twts">51.3K Tweets</div>
+                    </div>
+                    <div class="trend">
+                        <div class="trnd-tp flex-sb">
+                            <div class="spc-tr">Mcountdown &centerdot; Trending</div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="tr-nm">mcountdown</div>
+                        <div class="cnt-twts">32.8K Tweets</div>
+                    </div>
+                    <div class="trend">
+                        <div class="trnd-tp flex-sb">
+                            <div class="spc-tr">Music &centerdot; Trending</div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="tr-nm">ColdPlay</div>
+                        <div class="cnt-twts">23.8K Tweets</div>
+                    </div>
+                    <div class="trend">
+                        <div class="trnd-tp flex-sb">
+                            <div class="spc-tr">Music &centerdot; Trending</div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="tr-nm">DESCENDANTS OF THE MOON</div>
+                        <div class="cnt-twts">11.5K</div>
+                    </div>
+                    <div class="trend">
+                        <div class="trnd-tp flex-sb">
+                            <div class="spc-tr">Trending in Philippines</div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="tr-nm">#PVL2023</div>
+                        <div class="cnt-twts">5.9K</div>
+                    </div>
+                    <div class="shw-mr trend">
+                        <span class="show">Show more</span>
+                    </div>
+                </div>
+
+                <div class="rgt-containers">
+                    <h2>Who to follow</h2>
+                    <div class="fl-prf">
+                        <div class="user-img">
+                            <img src="https://pbs.twimg.com/profile_images/1414904727674920961/aRgHKXj5_400x400.jpg"
+                                alt="">
+                        </div>
+                        <div class="usr-name">
+                            <span class="otr-name">ABS-CBN NEWS</span><i class='fas fa-check-circle'></i><br>
+                            <span class="usrnem">@ABSCBNNews</span>
+                        </div>
+                        <button class="follow">Follow</button>
+                    </div>
+                    <div class="fl-prf">
+                        <div class="user-img">
+                            <img src="https://pbs.twimg.com/profile_images/1601958264631349255/L5VZ6afy_400x400.jpg"
+                                alt="">
+                        </div>
+                        <div class="usr-name">
+                            <span class="otr-name">CourageousChin</span>
+                            <i class='fas fa-check-circle'></i><br>
+                            <span class="usrnem">@CourageousChin</span>
+                        </div>
+                        <button class="follow">Follow</button>
+                    </div>
+                    <div class="fl-prf">
+                        <div class="user-img">
+                            <img src="https://pbs.twimg.com/profile_images/1563319496097824769/buG2eJtn_400x400.jpg"
+                                alt="">
+                        </div>
+                        <div class="usr-name">
+                            <span class="otr-name">Anne Curtis-Smith</span>
+                            <i class='fas fa-check-circle'></i>
+                            <span class="usrnem">@annecurtissmith</span>
+                        </div>
+                        <button class="follow">Follow</button>
+                    </div>
+                    <div class="shw-mr trend">
+                        <span class="show">Show more</span>
+                    </div>
+                </div>
+
+                <div class="trms-srvs">
+                    <span>Terms of Service</span>
+                    <span>Privacy Policy</span>
+                    <span>Cookie Policy</span>
+                    <span>Accessibility</span>
+                    <span>Adds infoy</span>
+                    <span>More ...</span>
+                    <span>&copy; 2023 X Corp.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- templates -->
+
+    <div class="tweet-post template">
+        <div class="t-m">
+            <div class="prf-lft">
+                <div class="user-img">
+                    <img src="" alt="">
+                </div>
+                <div class="v-line"></div>
+            </div>
+            <div class="prf-twt">
+                <div class="user-head flex-sb">
+                    <div class="usr">
+                        <span class="name">nvm</span>
+                        <span class="ad">
+                            <span class="username">@username</span>
+                            <span>&centerdot;</span>
+                            <span class="time">12h</span>
+                        </span>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="a">
+                    <p class="rp-to">Replying to <span class="to-name">@sample</span></p>
+                    <p class="post-content">#Para day one fit</p>
+                </div>
+                <div class="img-prvw">
+                </div>
+                <div class="reaction flex-sb">
+                    <div class="rct" id="r-rep">
+                        <i class="fa-sharp fa-regular fa-comment"></i>
+                        <span class="cnt"></span>
+                    </div>
+                    <div class="rct" id="r-rtwt">
+                        <i class="fas fa-retweet"></i>
+                        <span class="cnt"></span>
+                    </div>
+                    <div class="rct" id="r-like">
+                        <i class="far fa-heart"></i>
+                        <span class="cnt"></span>
+                    </div>
+                    <div class="rct" id="r-view">
+                        <i class="fas fa-align-right fa-rotate-90"></i>
+                        <span class="cnt"></span>
+                    </div>
+                    <div class="rct" id="r-share">
+                        <i class="fas fa-share"></i>
+                        <span class="cnt"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rt">
+            <div class="rt-modal">
+                <div class="rt-opt" id="rt-rtwt">
+                    <i class="fas fa-retweet"></i>
+                    <span class="cnt">Retweet</span>
+                </div>
+                <div class="rt-opt" id="qt-rtwt">
+                    <i class="fas fa-retweet"></i>
+                    <span class="cnt">Quote Retweet</span>
+                </div>
+            </div>
+        </div>
+        <div class="sh-thr">
+            <span>Show this thread</span>
+        </div>
+    </div>
+
+    <!-- thread template -->
+    <div class="thread template">
+        <div class="thread-tweet">
+            <div class="user-head flex-sb">
+                <div class="prf-lft flex-c">
+                    <div class="user-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="usr">
+                        <span class="name">nvm</span><br>
+                        <span class="username">@username</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="tweet-con">
+                <div class="a">
+                    <p class="post-content">#Para day one fit</p>
+                </div>
+                <div class="img-prvw">
+                    <!-- <img src="" class="img-post" alt=""> -->
+                </div>
+            </div>
+            <div class="time-twt"></div>
+            <div class="react-cnt flex-l">
+                <div class="rct">
+                    <span class="ctn">12</span>
+                    <span class="txt">Retweet</span>
+                </div>
+                <div class="rct">
+                    <span class="ctn">21</span>
+                    <span class="txt">Quote</span>
+                </div>
+                <div class="rct">
+                    <span class="ctn">354</span>
+                    <span class="txt">Likes</span>
+                </div>
+                <div class="rct">
+                    <span class="ctn">456</span>
+                    <span class="txt">Bookmark</span>
+                </div>
+            </div>
+            <div class="reaction flex-sb">
+                <div class="rct" id="r-rep">
+                    <i class="fa-sharp fa-regular fa-comment"></i>
+                </div>
+                <div class="rct" id="r-rtwt">
+                    <i class="fas fa-retweet"></i>
+                </div>
+                <div class="rct" id="r-like">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="rct" id="r-bmark">
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>
+                <div class="rct">
+                    <i class="fas fa-share"></i>
+                </div>
+            </div>
+
+            <div class="thread-form flex-l">
+
+                <div class="lft-sec">
+                    <div class="user-img">
+                        <img src="https://i.pinimg.com/originals/5a/e5/98/5ae598ff624217b9a5c008beb8c512d0.jpg" alt="">
+                    </div>
+                    <!-- <div class="line"></div> -->
+                </div>
+                <div class="rgt-sec">
+                    <form action="" id="th-form" class="twt-f">
+                        <p class="rp-to">Replying to <span class="to-name">@sample</span></p>
+                        <div class="input-rp flex-sb">
+                            <textarea maxlength="280" placeholder="Tweet your reply!" id="reply-textarea"
+                                class="input-p"></textarea>
+                            <div class="twt-btn twt">
+                                <button class="tweet">Reply
+                                </button>
+                                <div class="twt-hide"></div>
+                            </div>
+                        </div>
+                        <div class="other-opt flex-sb" style="display: none">
+                            <div class="opt-icons flex-l">
+                                <div class="ad-files">
+                                    <div class="opt-hide"></div>
+                                    <label for="fileInput">
+                                        <i class="fa fa-image"></i>
+                                    </label>
+                                    <input id="fileInput" type="file">
+                                </div>
+                                <div class="ad-gif">
+                                    <i>GIF</i>
+                                </div>
+                                <div class="ad-list">
+                                    <i class="fa fa-list-ul"></i>
+                                </div>
+                                <div class="ad-emoji">
+                                    <i class="far fa-smile"></i>
+                                </div>
+                                <div class="ad-loc">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                            </div>
+                            <div class="rgt-sd flex-c">
+                                <div class="on-input-show flex-c">
+                                    <div class="in-prgrs">
+                                        <div class="progress-bar">
+                                            <progress value="70" min="0" max="100"
+                                                style="visibility:hidden;height:0;width:0;"></progress>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="twt-btn">
+                                    <button class="tweet" onclick="tweet('#post-form', 'tweet', null)">Reply
+                                    </button>
+                                    <div class="tweet-hide"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="a-click"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modals" id="p">
+        <div class="cont">
+            <div class="m-header">
+                <div class="x-btn flex-c" onclick="hideShow('hide', '.modals')">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="m-main comment">
+                <div class="m-post">
+                    <div class="lft-sec">
+                        <div class="user-img">
+                            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80"
+                                alt="">
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="rgt-sec">
+                        <div class="user-head">
+                            <div class="usr">
+                                <span class="name">nvm</span>
+                                <span class="ad">
+                                    <span class="username">@username</span>
+                                    <span>&centerdot;</span>
+                                    <span class="time">12h</span>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="dis-p">
+                            dssdfj
+
+                        </div>
+                        <div class="reply">
+                            <span>Replying to</span>
+                            <span class="rp-usr">@sd</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" class="m2-form twt-f" id="reply-f">
+                    <div class="top-sec flex-l">
+                        <div class="lft-sec">
+                            <div class="user-img">
+                                <img src="https://i.pinimg.com/originals/5a/e5/98/5ae598ff624217b9a5c008beb8c512d0.jpg">
+                            </div>
+                        </div>
+                        <div class="rgt-sec">
+                            <div class="x-btn-f flex-c">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            <textarea maxlength="280" placeholder="What's happening?" class="input-p"
+                                id="reply-textarea"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="other-opt flex-sb ">
+                        <div class="opt-icons flex-l">
+                            <div class="ad-files">
+                                <label>
+                                    <i class="fa fa-image"></i>
+                                </label>
+                                <input id="fileInput" type="file">
+                            </div>
+                            <div class="ad-gif">
+                                <i>GIF</i>
+                            </div>
+                            <div class="ad-list">
+                                <i class="fa fa-list-ul"></i>
+                            </div>
+                            <div class="ad-emoji">
+                                <i class="far fa-smile"></i>
+                            </div>
+                            <div class="ad-time">
+                                <i class="fa-sharp fa-regular fa-clock"></i>
+                            </div>
+                            <div class="ad-loc">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                        </div>
+                        <div class="rgt-sd flex-sb">
+                            <div class="on-input-show">
+                                <div class="in-prgrs">
+                                    <div class="progress-bar">
+                                        <progress value="70" min="0" max="100"
+                                            style="visibility:hidden;height:0;width:0;"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twt-btn">
+                                <button class="tweet">Tweet
+                                </button>
+                                <div class="tweet-hide"></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modals" id="modal">
+        <div class="cont">
+            <div class="m-header">
+                <div class="x-btn flex-c" onclick="hideShow('hide', '#modal')">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="m-post">
+                <div class="lft-sec">
+                    <div class="user-img">
+                        <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80"
+                            alt="">
+                    </div>
+                </div>
+                <div class="rgt-sec">
+                    <div class="user-head">
+                        <div class="usr">
+                            <span class="name">nvm</span>
+                            <span class="ad">
+                                <span class="username">@username</span>
+                                <span>&centerdot;</span>
+                                <span class="time">12h</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="m-form twt-f" id="tweet-f">
+                <div class="top-sec">
+                    <div class="lft-sec">
+                        <div class="user-img">
+                            <img src="https://i.pinimg.com/originals/5a/e5/98/5ae598ff624217b9a5c008beb8c512d0.jpg">
+                        </div>
+                    </div>
+                    <div class="rgt-sec">
+                        <div class="x-btn-f flex-c">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <textarea maxlength="280" placeholder="What's happening?" class="input-p"
+                            id="reply-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="other-opt flex-sb ">
+                    <div class="opt-icons flex-l">
+                        <div class="ad-files">
+                            <div class="opt-hide"></div>
+                            <label for="fileInput">
+                                <i class="fa fa-image"></i>
+                            </label>
+                            <input id="fileInput" type="file">
+                        </div>
+                        <div class="ad-gif">
+                            <i>GIF</i>
+                        </div>
+                        <div class="ad-list">
+                            <i class="fa fa-list-ul"></i>
+                        </div>
+                        <div class="ad-emoji">
+                            <i class="far fa-smile"></i>
+                        </div>
+                        <div class="ad-time">
+                            <i class="fa-sharp fa-regular fa-clock"></i>
+                        </div>
+                        <div class="ad-loc">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                    </div>
+                    <div class="rgt-sd flex-c">
+                        <div class="on-input-show flex-c">
+                            <div class="in-prgrs">
+                                <div class="progress-bar">
+                                    <progress value="70" min="0" max="100"
+                                        style="visibility:hidden;height:0;width:0;"></progress>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="v-line"></div>
+                            </div>
+                            <div class="add-twt-btn">
+                                <div class="circle flex-c">
+                                    <i class="fa-regular fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="twt-btn">
+                            <button class="tweet">Tweet
+                            </button>
+                            <div class="tweet-hide"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="message">
+        <div class="content">
+            <div class="top flex-sb">
+                <span>Messages</span>
+                <div class="opt-m flex-c">
+                    <i class="far fa-envelope"></i>
+                    <i class="fas fa-angle-double-down" onclick="showMessage()"></i>
+                </div>
+            </div>
+            <div class="mess-cont flex-c">
+                <div class="mes flex-c">
+                    <span class="username">No message yet!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script src="tweets.js"></script> -->
+</body>
+
+</html>

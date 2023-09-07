@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="desc"><h1>Video Player</h1>
+        <p>Made by: <span>Catherine Vidas</span></p></div>
+        <div class="videobox">
+            <video id="video" src="Hello World.mp4" width="800px">
+            </video>
+        </div>
+        <div class="controls">
+            <button id="playpause" onclick="playPause()">&#x23F5;</button>
+            <button onclick="backward()">&#x23EA;</button>
+            <button onclick="forward()">&#x23E9;</button>
+            <button id="muteunmute" onclick="muteUnmute()">&#x1F50A;</button>
+            <button onclick="restart()">&#8634;</button>
+        </div>
+    </div>
+    <!-- Unicode is a list of characters with unique decimal numbers (code points). -->
+
+<script>
+    let vid = document.getElementById("video");
+
+    function playPause(){
+        let plyPau = document.getElementById('playpause');  
+        if(vid.paused){
+            vid.play();
+            plyPau.innerHTML = "&#x23F8;";
+        }
+        else{
+        vid.pause()
+            plyPau.innerHTML = "&#x23F5;";
+        }
+    }
+    
+    function backward(){
+        vid.currentTime -= 10;
+    }
+
+    function forward(){
+        vid.currentTime += 10;
+    }
+    
+    function muteUnmute(){
+        let muteUnmute = document.getElementById('muteunmute');
+        if(vid.muted == false){
+            vid.muted=true;
+            muteUnmute.innerHTML = "&#128263;";
+        }else{
+        vid.muted=false;
+            muteUnmute.innerHTML = "&#128266;";
+        }
+    }
+
+    function restart(){
+        vid.currentTime = 0;
+    }  
+
+</script>
+</body>
+</html>

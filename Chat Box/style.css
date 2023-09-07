@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg.gif");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-bar {
+    width: 400px;
+}
+
+#chat-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border: none;
+    
+}
+
+#chat-btn img {
+    width: 100px;
+}
+
+#chat-btn img:hover {
+    transition: 0.5s;
+    scale: 1.5;
+}
+
+#chat-box {
+    background-color: aliceblue;
+    width: 100%;
+    display: none;
+    border: 1px solid white;
+    box-shadow: 0 0 10px ;
+
+}
+.chat-opt {
+    height: 60px;
+    background-color: rgb(184, 117, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+}
+.user-img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.nameholder {
+    margin-left: 10px;
+}
+
+.nameholder h3 {
+    color: white;
+}
+.nameholder .dot-h {
+    display: flex;
+    align-items: center;
+}
+.nameholder .dot {
+    background-color: rgb(37, 236, 70);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.dot-h h6 {
+    margin: 0 0 1px 5px;
+}
+
+.user-img img {
+    width: 100%;
+}
+
+#messages {
+    padding: 20px;
+    width: 100%;
+    height: 70%;
+    background-color: rgb(111, 155, 194);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+#close i {
+    font-size: 2em;
+}
+
+#close:hover i {
+    color: white;
+}
+
+.msg-dis-inp {
+    color: blue;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 5px;
+    float: right;
+    position: relative;
+}
+#display-msg {
+    white-space: pre-wrap;
+    overflow-y: scroll;
+    height: 400px;
+    scroll-behavior: smooth;
+    padding: 10px;
+    width: 100%;
+    background-image: url("bac-msg.jpg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+textarea::-webkit-scrollbar,
+#display-msg::-webkit-scrollbar {
+    display: none;
+}
+.msg-cov {
+    width: 200px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}
+
+p {
+    background-color: white;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.msg-cov p {
+    background-color: rgba(23, 8, 37, 0.514);
+    color: white;
+}
+.auto-msg {
+    width: 200px;
+    height: auto;
+}
+
+.auto-msg p {
+    width: fit-content;
+    margin: -50px 0;
+}
+
+h5 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+.msg-form {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(184, 117, 247);
+}
+
+textarea {
+    outline: none;
+    padding: 5px 10px;
+    vertical-align: middle;
+    width: 400px;
+    resize: none;
+    border-radius: 10px;
+    background-color: rgb(253, 246, 255);
+}
+
+textarea:focus {
+    outline: 1px solid rgb(113, 7, 128);
+}
+#sent-msg {
+    font-size: 1.7em;
+    margin: 0 4px 0 10px;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>&#9745; STUDENT LIST &#9745;</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- data will be displayed here -->
+        </tbody>
+    </table>
+
+    <button id="add" onclick="showAddModal()">Add Student</button>
+
+    <div id="modal">
+        <div class="content">
+            <span class='close' onclick="document.getElementById('modal').style.display = 'none'">&times;</span>
+            <h2 id="modalHeading"></h2>
+            <p id="idHolder">Student ID:&nbsp;&nbsp;<span id="studId"></span></p>
+            <form action="" id="modalForm" onsubmit="editOrAddStudent()">
+                <label for="">Name:</label>
+                <input type="text" required>
+                <label for="">Age:</label>
+                <input type="number" required>
+                <label for="">Course:</label>
+                <input type="text" required>
+                <label for="">Year:</label>
+                <input type="number" min="1" max="9" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

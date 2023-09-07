@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="chat-btn" type="button" onclick="openChat()">
+    <img src="msg.png" alt=""></i></button>
+    <div class="chat-bar">
+        <div id="chat-box">
+            <div class="chat-opt">
+                <div class="user">
+                    <div class="user-img">
+                        <img src="Vidas.jpg" alt="">
+                    </div>
+                    <div class="nameholder"><h3>Catherine Vidas</h3>
+                    <div class="dot-h">
+                        <div class="dot"></div>
+                        <h6>active</h6>
+                </div>
+                </div>
+                </div>
+                <button id="close" onclick="closeChat()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="user-list"></div>
+            <div id="display-msg">
+                <div class="wrapper">
+                    <h5>Today</h5>
+                    <div class="auto-msg">
+                        <p>Welcome!!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-form">
+                <textarea name="msg" id="msg-input" placeholder="Type a message..."></textarea>
+                <button type="submit"><i class="fa-solid fa-paper-plane" id="sent-msg" onclick="Msg()"></i></button>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js">
+</script>
+</html>

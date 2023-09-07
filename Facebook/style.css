@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(161, 161, 161, 0.151);
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container.whole {
+    display: block;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    overflow: hidden;
+}
+
+
+
+.icon-bx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(173, 173, 173);
+    overflow: hidden;
+}
+
+
+.icon-bx img {
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+/* flex css */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Navigation bar */
+
+.container.nav {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgb(156, 156, 156);
+
+}
+
+.nav .left {
+    justify-content: left;
+    padding: 8px 15px;
+}
+
+.nav .left .fb-logo {
+    font-size: 2.2em;
+    align-items: normal;
+    background-image: linear-gradient(rgb(81, 162, 255), rgb(0, 102, 255));
+    color: white;
+}
+
+.fb-logo i {
+    margin-top: 8px;
+}
+
+.nav .search-bar {
+    background-color: #f0f2f5;
+    border-radius: 50px;
+    padding: 0 10px;
+    height: 40px;
+    margin-left: 10px;
+    color: rgb(148, 148, 148);
+}
+
+.nav .search-bar input {
+    height: 80;
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+    /* navigation mid-section */
+.nav .mid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.nav .mid .main-icon {
+    font-size: 1.5em;
+    color: #65676b;
+}
+.nav .mid .main-icon.active{
+    color: #1b74e4;
+    border-bottom: 3px solid #1b74e4;
+}
+
+.nav .right {
+    justify-content: right;
+    padding: 8px 15px;
+}
+.nav .right .con{
+    margin-left: 5px;
+    font-size: 1.3em;
+    background-color: #e4e6eb;
+    border-radius: 50%;
+    border: none;
+
+}
+
+
+
+
+/* body content */
+
+
+    /* left section */
+
+.body .left {
+    display: block;
+}
+
+.body .left .flex{
+    justify-content: left;
+
+}
+
+.body .left .profile p.name {
+    margin-left: 10px;
+}
+
+.body .left .add-opts {
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.body .left .add-opts span {
+    font-size: 0.6em;
+    margin-left: 5px;
+}
+
+/* mid-body content */
+.body .mid {
+    overflow: hidden;
+}
+.body .mid .cont-body {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+    /* heading */
+.cont-body.reels {
+    font-weight: bold;
+    padding: 0;
+}
+
+.cont-body .heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    font-weight: bold;
+    color: rgb(121, 121, 121);
+    padding: 0 20px;
+}
+
+.head-opts {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.head-opts.active {
+    color: #1b74e4;
+    border-bottom: 3px solid #1b74e4;
+}
+.head-opts i{
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+.cont-body .cont-reels {
+    padding: 20px;
+    justify-content: left;
+}
+
+.cont-reels .reels-bx {
+    width: 130px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 0 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cont-reels .prof-bx {
+    width: 100%;
+    height: 75%;
+    position: relative;
+}
+
+.prof-bx img , .reels-bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(85%);
+}
+.prof p {
+    text-align: center;
+    position: relative;
+    height: 25%;
+    margin-top: 20px;
+}
+.prof span {
+    position: absolute;
+    left: 40%;
+    bottom: 17%;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(73, 137, 255);
+    border-radius: 50%;
+    border: 3px solid white;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.reels-bx .icon-bx {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 3px solid #1b74e4 ;
+}
+.reels-bx p.prnames {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+}
+
+
+
+/* post-section */
+
+.cont-body.post{
+    padding: 20px;
+}
+.cont-body.post .top-sec {
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.cont-body.post .top-sec .inputfield {
+    width: 93%;
+}
+
+.inputfield {
+    width: 98%;
+    height: 45px;
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color: #f0f2f5;
+    font-size: 17px;
+    color: #65676b;
+    justify-content: left;
+    padding: 0 15px;
+    
+} 
+
+.lower-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    color: #65676b;
+    font-weight: bold;
+}
+
+.lower-sec i{
+    margin-right: 5px;
+    font-size: 1.3em;
+}
+
+
+ /* timeline posts */
+.acc-head {
+    justify-content: space-between;
+}
+
+.acc-head .left-sec .prf-name {
+    margin-left: 10px;
+}
+
+.acc-head .left-sec .time {
+    justify-content: left;
+}
+
+.acc-head .right-sec {
+    color: #65676b;
+    letter-spacing: 0.01em
+}
+
+/* post */
+.display-post {
+    margin: 20px 0 10px 0;
+}
+.display-post .img-holder {
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.react-summary {
+    justify-content: space-between;
+    color: #65676b;
+} 
+
+.react-summary .icons {
+    font-size: 20px;
+
+}
+.react-summary .others .com {
+    margin-left: 10px;
+}
+
+.react-summary .others .com i, .react-summary .reacts p ,
+.action-btn button p{
+    margin-left: 5px;
+}
+
+.action-btn {
+    justify-content: space-between;
+    padding: 0 50px;
+    border-bottom: 1px solid #e4e6eb;
+    border-top: 1px solid #e4e6eb;
+    margin: 10px 0;
+}
+.action-btn button {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px 10px;
+    color: #65676b;
+}
+
+.action-btn button i {
+    font-size: 20px;
+}
+
+/* comment section */
+#com-sect > span {
+    display: none;
+    cursor: pointer;
+    color: #65676b;
+    font-weight: bold;
+}
+#com-sect .com-list {
+    justify-content: left;
+    align-items: normal;
+    margin: 10px 0;
+}
+.comment {
+    margin-left: 10px;
+}
+.com-text {
+    background-color:#e4e6eb;
+    padding: 10px;
+    border-radius: 15px;
+}
+.com-text span {
+    font-weight: bold;
+    color: #242424;
+}
+.com-react button {
+    margin: 0 10px;
+    color: #65676b;
+}
+/* comment form */
+.com-form {
+    justify-content: left;
+}
+.input-div {
+    margin-left: 10px;
+    width: 100%;
+}
+.input-div form {
+    background-color: #e4e6eb;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+.input-div input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.com-form button i {
+    font-size: 1.5em;
+    margin-left: 10px;
+    color: #65676b;
+
+}
+
+
+
+/* modals css */
+
+.modals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.815);
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    background-color: white;
+    width: 500px;
+    /* margin: 0 auto; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+
+}
+
+.modal-head-sec {
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.modal-head-sec span {
+    font-size: 2.7em;
+    background-color: #e4e6eb;
+    border: none;
+    color: #65676b;
+    position: absolute;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    padding-top: 3px;
+}
+.modal-content {
+    padding: 15px;
+}
+
+/* post modal css */ 
+.modal-profile {
+    justify-content: left;
+}
+.name-aud {
+    margin-left: 10px;
+}
+.acc-name-modal {
+    font-weight: bold;
+}
+.post-aud-choice {
+    background-color: #e4e6eb;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+    /* post modal inputfield */
+
+form.modal-post-inputField textarea {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 20px;
+    min-height: 200px;
+    resize: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea:focus {
+    outline: none;
+}
+form.modal-post-inputField button {
+    background-color: #1b74e4;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+form.modal-post-inputField .add-ons {
+    position: relative;
+    font-weight: bold;
+    justify-content: space-between;
+    border: 1px solid rgb(158, 158, 158);
+    padding: 13px 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.modal-post-inputField .add-ons i {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.add-ons #media-div {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+.add-ons #media-div input {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+#media-div span {
+    font-size: 2em;
+    color: #65676b;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* comment modal */
+#modal-com .modal-container {
+    margin: 5% auto;
+    width: 800px;
+}
+.com-post {
+    padding: 20px;
+    height: 500px;
+    overflow-y: scroll;
+    position: relative;
+}
+#modal-com .com-form {
+    padding: 20px;
+}
+
+#post-template,
+#comment-template,
+.shared .right-sec,
+.shared > .img-holder {
+    display: none;
+}
+
+/* shared post */
+.shared {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+}
+.shared .icon-bx {
+    width: 30px;
+    height: 30px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p.x-btn {
+    cursor: pointer;
+}
